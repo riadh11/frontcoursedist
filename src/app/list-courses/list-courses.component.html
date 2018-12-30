@@ -1,0 +1,9 @@
+<p>
+  list-courses works!
+</p>
+<div *ngFor="let course of courses">
+ <p>name of course: {{course.name}}</p> 
+ <p>distance of course:{{course.distance}}</p> 
+ <h4>distinations</h4>
+<h2 *ngFor="let distination of course.dest">{{distination.ville}}</h2>
+</div>
