@@ -7,8 +7,7 @@ import construct = Reflect.construct;
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  Myname : String = "Baba BELKACEM";
-  LastName : String = "Ahhhhh";
+  
   construct() {
 }
 

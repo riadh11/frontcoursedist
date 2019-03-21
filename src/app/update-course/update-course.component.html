@@ -1,0 +1,7 @@
+<div class="row">
+  <form [formGroup]="courseForm">
+    <input class='' type="text" formControlName="name" [(ngModel)]="c.name">
+    <input type="text" formControlName="distance" [(ngModel)]="c.distance">
+    <button (click)="updateCourse()" class="btn btn-success"> Update</button>
+  </form>
+</div>

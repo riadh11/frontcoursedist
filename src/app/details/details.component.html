@@ -1,0 +1,10 @@
+<p>
+  details works!
+</p>
+
+  {{course?.name}}
+  {{course?.id}}
+  {{course?.name}}
+  <p>distance of course:{{course?.distance}}</p> 
+  <h4>distinations</h4>
+ <h2 *ngFor="let distination of course?.dest">{{distination?.ville}}</h2>

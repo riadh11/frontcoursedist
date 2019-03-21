@@ -12,10 +12,19 @@ export class ListCoursesComponent implements OnInit {
   constructor(private coursesService:CoursesService) { }
 
   ngOnInit() {
-    this.coursesService.getCourses().subscribe(
-    response=>this.courses=response,
-    error=>console.log(error)
-  );
+    this.getCourses();
   }
+  getCourses(){
+    this.coursesService.getCourses().subscribe(
+      response=>this.courses=response,
+      error=>console.log(error)
+    );
+  }
+deleteCourse(id:number){
+this.coursesService.deleteCourse(id).subscribe(
+  res=>this.getCourses(),
+  err=>console.log(err)
+);
+}
 
 }

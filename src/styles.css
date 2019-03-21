@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+.row{
+    background-color:#aada14;
+    padding: 20px;
+    padding-top: 10px;
+}
